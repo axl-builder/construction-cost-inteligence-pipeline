@@ -1,0 +1,61 @@
+# --- SEGURIDAD Y SECRETOS ---
+.env
+*.pem
+*.key
+secrets.json
+.token*
+*-credentials.json
+*-service-account.json (Específico para Google Cloud/GCP)
+*-key.json
+
+# --- DATOS Y ARCHIVOS PESADOS ---
+# Nunca subas datos crudos o procesados
+data/
+raw_data/
+processed_data/
+*.csv
+*.parquet
+*.jsonl
+*.avro
+*.sqlite
+*.db
+
+# --- PYTHON (Si usas Airflow, Prefect, Spark) ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+.pytest_cache/
+
+# --- ORQUESTADORES Y HERRAMIENTAS ---
+# Airflow
+standalone_admin_password.txt
+airflow.cfg
+airflow.db
+logs/
+
+# dbt (Data Build Tool)
+target/
+dbt_packages/
+dbt_modules/
+logs/
+
+# Spark / Hadoop
+.spark_staging/
+metastore_db/
+derby.log
+checkpoint/
+
+# --- INFRAESTRUCTURA (Terraform / Docker) ---
+.terraform/
+*.tfstate
+*.tfstate.backup
+.docker/
+
+# --- IDE Y SISTEMA ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
