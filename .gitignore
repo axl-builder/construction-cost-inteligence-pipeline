@@ -5,7 +5,7 @@
 secrets.json
 .token*
 *-credentials.json
-*-service-account.json (Específico para Google Cloud/GCP)
+*-service-account.json 
 *-key.json
 
 # --- DATOS Y ARCHIVOS PESADOS ---
