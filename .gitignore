@@ -59,3 +59,11 @@ checkpoint/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Research / exploración
+research/*.xlsx
+research/*.png
+
+# Kafka / Grafana (local)
+kafka-logs/
+grafana-data/
